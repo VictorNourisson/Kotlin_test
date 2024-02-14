@@ -72,12 +72,9 @@ const val LONG_TEXT = """Le Lorem Ipsum est simplement
     Le Lorem Ipsum est le faux texte standard
     de l'imprimerie depuis les années 1500"""
 
-data class PictureBean(val url: String, val text: String, val longText: String)
+data class PictureBean(var url:String, val quote: String, val idQuote: String, val icon_url: String) {
+}
 
 //jeu de donnée
-val pictureList = arrayListOf(PictureBean("https://picsum.photos/200", "ABCD", LONG_TEXT),
-    PictureBean("https://picsum.photos/201", "BCDE", LONG_TEXT),
-    PictureBean("https://picsum.photos/202", "CDEF", LONG_TEXT),
-    PictureBean("https://picsum.photos/203", "EFGH", LONG_TEXT)
-)
+
 
