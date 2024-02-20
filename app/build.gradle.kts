@@ -67,7 +67,26 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation("com.squareup.okhttp3:okhttp:+")
+     implementation("com.squareup.okhttp3:okhttp:+")
+
+    //Parsing JSON
     implementation("com.google.code.gson:gson:+")
+
+    //Image url
     implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-compose:2.+")
+
+    //ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.+")
+
+
+    //Utilisation générale
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:+")
+//LifeCycleScope
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.+")
+//ViewModelScope
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.+")
+
 }
